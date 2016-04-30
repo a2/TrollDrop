@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UM5-X5-ZX1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="8dh-0l-kfL">
+            <objects>
+                <viewController id="UM5-X5-ZX1" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZM3-EY-hjz"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Dt-9h-Xbw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tCC-qX-1bC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trollface.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="g1J-dL-Q6S">
+                                <rect key="frame" x="69" y="111" width="462" height="377"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g1J-dL-Q6S" secondAttribute="height" multiplier="462:377" id="gkA-JO-pgb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g1J-dL-Q6S" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZM3-EY-hjz" secondAttribute="bottom" constant="20" id="0Xn-y9-igL"/>
+                            <constraint firstItem="4Dt-9h-Xbw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="g1J-dL-Q6S" secondAttribute="bottom" constant="20" id="Lbh-Gu-Bbp"/>
+                            <constraint firstItem="g1J-dL-Q6S" firstAttribute="centerX" secondItem="tCC-qX-1bC" secondAttribute="centerX" id="XIU-gc-m4r"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="g1J-dL-Q6S" secondAttribute="trailing" constant="20" id="Zq1-Ar-pKS"/>
+                            <constraint firstItem="g1J-dL-Q6S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tCC-qX-1bC" secondAttribute="leading" constant="20" id="bfc-mG-3zi"/>
+                            <constraint firstItem="g1J-dL-Q6S" firstAttribute="centerY" secondItem="tCC-qX-1bC" secondAttribute="centerY" id="rag-Op-UZS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3bL-GK-Ai5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trollface.jpg" width="462" height="377"/>
+    </resources>
+</document>
