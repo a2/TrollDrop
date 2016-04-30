@@ -25,6 +25,7 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) AirDropBrowser *airDropBrowser;
+@property (nonatomic, weak) NSTimer *timer;
 
 @end
 
@@ -45,8 +46,14 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillEnterForeground:) name:UIApplicationWillEnterForegroundNotification object:nil];
 
+    [self startTimer];
+}
+
+- (void)startTimer
+{
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(trollDrop:) userInfo:nil repeats:YES];
     [self trollDrop:timer];
+    self.timer = timer;
 }
 
 - (void)troll:(AirDropNode *)node
@@ -65,11 +72,13 @@
 - (void)applicationWillEnterForeground:(NSNotification *)note
 {
     [self.airDropBrowser start];
+    [self startTimer];
 }
 
 - (void)applicationDidEnterBackground:(NSNotification *)note
 {
     [self.airDropBrowser stop];
+    [self.timer invalidate];
 }
 
 @end
