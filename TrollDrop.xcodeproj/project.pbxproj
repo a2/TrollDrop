@@ -63,11 +63,11 @@
 				831443A91CD54BD9004253E3 /* AppDelegate.h */,
 				831443AA1CD54BD9004253E3 /* AppDelegate.m */,
 				831443B21CD54BD9004253E3 /* Assets.xcassets */,
-				831443BD1CD54FAC004253E3 /* trollface.jpg */,
 				831443B71CD54BD9004253E3 /* Info.plist */,
 				831443B41CD54BD9004253E3 /* LaunchScreen.storyboard */,
 				831443AF1CD54BD9004253E3 /* Main.storyboard */,
 				831443A61CD54BD9004253E3 /* Supporting Files */,
+				831443BD1CD54FAC004253E3 /* trollface.jpg */,
 				831443AC1CD54BD9004253E3 /* ViewController.h */,
 				831443AD1CD54BD9004253E3 /* ViewController.m */,
 			);
@@ -306,6 +306,7 @@
 				831443BC1CD54BD9004253E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
