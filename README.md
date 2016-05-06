@@ -1,4 +1,4 @@
-# TrollDrop
+# TrollDrop &rarr; [TrollDropKit](https://github.com/a2/TrollDrop)
 
 :trollface: AirDrop trollfaces to everyone.
 
