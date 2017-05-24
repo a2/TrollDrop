@@ -1,4 +1,8 @@
-# TrollDrop &rarr; [TrollDropKit](https://github.com/a2/TrollDropKit)
+**Deprecated** in favor of [TrollDropKit](https://github.com/a2/TrollDropKit).
+
+---
+
+# TrollDrop
 
 :trollface: AirDrop trollfaces to everyone.
 
